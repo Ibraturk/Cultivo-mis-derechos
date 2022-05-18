@@ -1,0 +1,101 @@
+:root {
+    --very-light-green: #F4FCD9;
+    --text-input-field: #F7F7F7;
+    --green-thc: #84926c;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #534340;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+  font-family: 'Montserrat', sans-serif;;
+}
+nav {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-green);
+}
+.menu {
+    display: none;
+}
+.nav-logo {
+    width: 100px;
+    height: 100%;
+}
+.nav-name{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    font-weight: bold;
+}
+.navbar-left {
+    display: flex;
+    
+}
+.navbar-left ul li a,
+.navbar-right ul li a{
+    text-decoration: none;
+    color: var(--dark);
+    border: 1px solid var(white);
+    padding: 12px;
+    border-radius: 8px;
+    
+}
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover{
+    border: 1px solid var(--green-thc);
+    color: var(--hospital-green);
+
+}
+.navbar-left ul,
+.navbar-right ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 60px;
+
+}
+.hero-image{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://news.agrofystatic.com/59764bff2d3b5_1004x563.jpg?d=620x375");   
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .hero-text h1{
+      font-size: 80px;
+      margin: 30px;
+  }
+ 
+@media (max-width: 640px) {
+   
+    .menu {
+        display: block;
+        width: 24px;
+    }
+    .navbar-left ul {
+        display: none;
+    }
+    .navbar-email {
+        display: none;
+    }
+   
+}
